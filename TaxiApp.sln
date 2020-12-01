@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiApp", "TaxiApp\TaxiApp.csproj", "{05E3E17A-2D34-4D49-BEE1-56869A1BD20B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05E3E17A-2D34-4D49-BEE1-56869A1BD20B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E3E17A-2D34-4D49-BEE1-56869A1BD20B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E3E17A-2D34-4D49-BEE1-56869A1BD20B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E3E17A-2D34-4D49-BEE1-56869A1BD20B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A35979B-27FF-4AE7-8A65-13928F2A3DAF}
+	EndGlobalSection
+EndGlobal

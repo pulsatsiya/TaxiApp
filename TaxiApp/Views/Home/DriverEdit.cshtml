@@ -1,0 +1,36 @@
+﻿@model TaxiApp.Models.RequestClient
+@using TaxiApp.Models
+@{
+    ViewBag.Title = "Редактирование и назначение водителя";
+}
+<h2>Редактирование заявки номер @Model.Id</h2>
+<form asp-action="driveredit" asp-controller="home" asp-route-id="@Model.Id">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Имя клиента</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Phone" class="control-label">Телефон клиента</label>
+        <input type="text" asp-for="Phone" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="StartPoint" class="control-label">Начальная точка</label>
+        <input type="text" asp-for="StartPoint" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EndPoint" class="control-label">Конечная точка</label>
+        <input type="text" asp-for="EndPoint" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="UserId" class="control-label">Назначить водителя</label>
+        <select asp-for="UserId" asp-items="ViewBag.Drivers"></select>
+    </div>
+    <div class=" form-group">
+        <label asp-for="Status" class="control-label">Статус</label>
+        <select asp-for="Status" asp-items="Html.GetEnumSelectList<Status>()"></select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Сохранить" class="btn btn-default" />
+    </div>
+
+</form>

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<TaxiApp.Models.RequestClient>
+
+<html>
+<head>
+    <title>Оформление заказа</title>
+</head>
+<body>
+    <div>
+        <p>Для оформления поездки заполните данные: </p>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Ваше имя:</td>
+                    <td><input type="text" name="Name" /> </td>
+                </tr>
+                <tr>
+                    <td>Откуда поедем:</td>
+                    <td><input type="text" name="StartPoint" /> </td>
+                </tr>
+                <tr>
+                    <td>Куда поедем:</td>
+                    <td><input type="text" name="EndPoint" /></td>
+                </tr>
+                <tr>
+                    <td>Телефон:</td>
+                    <td><input type="text" name="Phone" /></td>
+                </tr>
+                <tr>
+                    <td>Комментарии:</td>
+                    <td><input type="text" name="Comment" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+
+
+    <div>
+
+    </div>
+    
+</body>
+</html>

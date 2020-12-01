@@ -1,0 +1,40 @@
+﻿@model IEnumerable<TaxiApp.Models.RequestClient>
+@using TaxiApp.Models
+<html>
+<body>
+    <div>
+        <h3>Все поездки</h3>
+        <table>
+            <tr>
+                <td>Номер заявки</td>
+                <td>Имя</td>
+                <td>Телефон</td>
+                <td>Начальная точка</td>
+                <td>Конечная точка</td>
+            </tr>
+            @foreach (var request in Model)
+            {
+                <tr>
+                    <td>@request.Id</td>
+                    <td>@request.Name</td>
+                    <td>@request.Phone</td>
+                    <td>@request.StartPoint</td>
+                    <td>@request.EndPoint</td>
+                    <td>
+                        <a asp-action="DriverEdit" asp-controller="Home" asp-route-id="@request.Id">Выбрать заказ</a>
+                    </td>
+                </tr>
+
+
+            }
+        </table>
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
